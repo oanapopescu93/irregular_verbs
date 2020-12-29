@@ -2,7 +2,7 @@ var verbs = [
 	{letter: "A", first_form: "awake", second_form: "awoke", third_form: "awaken", translate: "a trezi"},
 	{letter: "B", first_form: "be", second_form: "was/were", third_form: "been", translate: "a fi"},
 	{letter: "B", first_form: "become", second_form: "became", third_form: "become", translate: "a deveni"},
-	{letter: "B", first_form: "burn", second_form: "burn", third_form: "burn", translate: "a arde"},
+	{letter: "B", first_form: "burnt", second_form: "burnt", third_form: "burn", translate: "a arde"},
 	{letter: "B", first_form: "build", second_form: "built", third_form: "built", translate: "a construi"},
 	{letter: "B", first_form: "bet", second_form: "bet", third_form: "bet", translate: "a paria"},
 	{letter: "B", first_form: "buy", second_form: "bought", third_form: "bought", translate: "a cumpara"},
