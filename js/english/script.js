@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var game = new irregular_verbs_game("irregular_verbs_game");
+	var game = new irregular_verbs_game("irregular_verbs_game_english");
 	game.ready();
 });
 
@@ -9,7 +9,7 @@ function irregular_verbs_game(id){
 	this.ready = function(){	
 		self.main_structure(id);		
 		$('body').off('click').on('click', '.quiz_verb_group li', function (e) {	
-			var quiz = new quiz_game("irregular_verbs_game");	
+			var quiz = new quiz_game("irregular_verbs_game_english");	
 			quiz.ready($(e.currentTarget));	
 		});
 	}	
@@ -63,9 +63,9 @@ function quiz_game(id){
 	}
 	
 	this.verify_answer = function(nr){
-		var myform01 = $('#second_form input').val();
-		var myform02 = $('#third_form input').val();
-		var myform03 = $('#translate input').val();
+		var myform01 = $('#second_form input').val().toLowerCase();
+		var myform02 = $('#third_form input').val().toLowerCase();
+		var myform03 = $('#translate input').val().toLowerCase();
 		
 		var form01 = verb_group[nr].second_form;
 		var form02 = verb_group[nr].third_form;
@@ -162,7 +162,7 @@ function quiz_game(id){
 		$('#'+id+' .quiz_verb_group_container').append('<div class="row"><div class="col-sm-12"><button class="button_green" id="try_again">Try again</button></div></div>');
 			
 		$('#'+id).off('click').on('click', '#try_again', function (e) {
-			var game = new irregular_verbs_game("irregular_verbs_game");
+			var game = new irregular_verbs_game("irregular_verbs_game_english");
 			game.ready();	
 		});
 	}

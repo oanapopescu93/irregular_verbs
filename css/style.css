@@ -111,7 +111,12 @@ hr{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.box_answer input{
+#irregular_verbs_game_german .box_answer{
+	display: inline-block;
+    padding: 10px;
+	width:20%;
+}
+.box_answer input, .box_answer select{
 	background:transparent;
 	border:solid 0px transparent;
 	border-bottom:solid 1px green;
@@ -119,6 +124,7 @@ hr{
 	max-width:280px;
 	margin:0px auto;
 	display:block;
+	height:25px;
 }
 .button_green{
 	background:transparent;
@@ -192,7 +198,11 @@ footer ~ div {
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
-	.box_answer input{
+	#irregular_verbs_game_german .box_answer{
+		padding: 5px;
+		width:100%;
+	}
+	.box_answer input, .box_answer select{
 		display: inline-block;
 		vertical-align: middle;
 		width:75%;
