@@ -124,7 +124,6 @@ function quiz_game(id){
 		$('#'+id+' .quiz_verb_group_container').append('<div class="row"><div class="col-sm-12"><button class="button_green" id="next_question">Next question</button></div></div>');
 		
 		$('body').off('click').on('click', '#next_question', function (e) {	
-			console.warn('next_question click');
 			question_nr = question_nr + 1;
 			if(question_nr < verb_group.length){			
 				self.next_question(question_nr);

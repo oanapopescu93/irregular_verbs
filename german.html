@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div id="irregular_verbs_game_german" class="container"></div>
-		<button id="back" onclick="history.back()">Back</button>
+		<button id="back" onclick="handleClick()">Back</button>
 		<footer class="text-center"><h6>Copyright © <span id="copyright_year">2022</span> Oana Popescu. All rights reserved.</h6></footer>
 	</body>
 </html>
@@ -18,7 +18,14 @@
 <script>
 	var date = new Date();
 	date = date.getFullYear();
-	$('#copyright_year').text(date);	
+	$('#copyright_year').text(date);
+
+	function handleClick(){
+		let url = window.location.href;
+		const myArray = url.split("/german.html");
+		url = myArray[0]+'/index.html';
+		window.location.replace(url);
+	}
 </script>
 <script src="js/german/data.js"></script>
 <script src="js/german/script.js"></script>

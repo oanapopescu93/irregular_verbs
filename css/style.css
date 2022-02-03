@@ -115,6 +115,7 @@ hr{
 	display: inline-block;
     padding: 10px;
 	width:20%;
+	vertical-align: top;
 }
 .box_answer input, .box_answer select{
 	background:transparent;
