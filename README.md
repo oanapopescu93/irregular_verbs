@@ -1,2 +1,2 @@
 # irregular_verbs
-Quiz game - English and German irregular verbs (OOP Javascript)
+Quiz game - English and German irregular verbs
